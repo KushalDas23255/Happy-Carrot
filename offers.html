@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>My first Capstone Project</title>
+    </head>
+    <body>
+        <!-- header -->
+        <div class="text-bg-dark">
+            <div class="container pt-2 pb-2">
+                <div
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                >
+                    <a
+                        href="/"
+                        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                    >
+                        <svg
+                            class="bi me-2"
+                            width="40"
+                            height="32"
+                            role="img"
+                            aria-label="Bootstrap"
+                        >
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+
+                    <ul
+                        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                    >
+                        <li>
+                            <a
+                                href="index.html"
+                                class="nav-link px-2 text-white"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-2 text-secondary"
+                                >Offers</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="cartpage.html"
+                                class="nav-link px-2 text-white"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-cart4"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                                    />
+                                </svg>
+                                Cart</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="loginpage.html"
+                                class="nav-link px-2 text-white"
+                                >Login</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="signuppage.html"
+                                class="nav-link px-2 text-white"
+                            >
+                                Sign-Up
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="aboutus.html"
+                                class="nav-link px-2 text-white"
+                                >About</a
+                            >
+                        </li>
+                    </ul>
+
+                    <form
+                        class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                        role="search"
+                    >
+                        <input
+                            type="search"
+                            class="form-control form-control-dark text-bg-dark"
+                            placeholder="Search..."
+                            aria-label="Search"
+                        />
+                    </form>
+
+                    <div class="text-end">
+                        <button
+                            type="button"
+                            class="btn btn-outline-light me-2"
+                        >
+                            Search
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="vegintro.webp"
+                        class="d-block w-100"
+                        alt="not found vegintro"
+                    />
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="veghandpicked.jpg"
+                        class="d-block w-100"
+                        alt="not found veghandpicked"
+                    />
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="vegbooklet.jpg"
+                        class="d-block w-100"
+                        alt="not found vegbooklet"
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="container px-4 py-5" id="custom-cards">
+            <div class="text-center">
+                <h1 class="pb-2 border-bottom"><b>Best Offers Today</b></h1>
+            </div>
+
+            <div
+                class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+            >
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket1.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Small Basket/day for 30 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+
+                                    <large class="h1">₹4000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket2.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Small Basket/day for 45 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹5000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket3.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Small Basket/day for 60 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹6000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+            >
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket4.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Medium Basket/day for 30 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹8000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket5.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Medium Basket/day for 45 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹9000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket6.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Medium Basket/day for 60 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹10000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+            >
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket7.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Large Basket/day for 30 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹11000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket8.jpg')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Large Basket/day for 45 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹12000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('basket9.avif')"
+                    >
+                        <div
+                            class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"
+                        >
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                Large Basket/day for 60 days
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img
+                                        src="happycarrot.jpg"
+                                        alt="Bootstrap"
+                                        width="50"
+                                        height="50"
+                                        class="rounded-circle border border-white"
+                                    />
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <large class="h1">₹13000</large>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg
+                                        class="bi me-2"
+                                        width="1em"
+                                        height="1em"
+                                    >
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>30 min delivery</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div id="footer-section">
+            <div class="container">
+                <footer class="py-3">
+                    <ul
+                        class="nav justify-content-center border-bottom pb-3 mb-3"
+                    >
+                        <li class="nav-item">
+                            <a
+                                href="index.html"
+                                class="nav-link px-2 text-white"
+                                id="footer-anchor"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-secondary"
+                                >Offers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="cartpage.html"
+                                class="nav-link px-2 text-white"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-cart4"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                                    />
+                                </svg>
+                                Cart</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="loginpage.html"
+                                class="nav-link px-2 text-white"
+                                >Login</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="signuppage.html"
+                                class="nav-link px-2 text-white"
+                                >Sign-up</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="aboutus.html"
+                                class="nav-link px-2 text-white"
+                                >About</a
+                            >
+                        </li>
+                    </ul>
+                    <p class="text-center text-white">© Happy Carrot</p>
+                </footer>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
